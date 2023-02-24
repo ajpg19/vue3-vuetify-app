@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
+import '@mdi/font/css/materialdesignicons.css'
 import App from './App.vue'
 
 // Vuetify
@@ -13,7 +14,10 @@ const vuetify = createVuetify({
     directives,
     theme: {
         defaultTheme: 'dark'
-    }
+    },
+    icons: {
+        defaultSet: 'mdi' // This is already the default value - only for display purposes
+    },
 })
 
 createApp(App)
